@@ -7,7 +7,7 @@ public class GreatestCommonDivisor {
             second = first % second;
             first = temp;
         }
-        System.out.println("GCD: " + first);
+        System.out.println(first);
     }
 }
 

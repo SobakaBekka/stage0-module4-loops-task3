@@ -10,7 +10,7 @@ public class NinesSum {
             sum += currentNumber; // Добавление текущего числа к сумме
         }
 
-        System.out.println("Sum of the series: " + sum);
+        System.out.println(sum);
     }
 
 }
