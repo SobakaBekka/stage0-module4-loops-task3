@@ -4,7 +4,7 @@ public class RangeSum {
     public void printSumInclusive(int firstBoarder, int secondBoarder) {
 
         int summa = 0;
-        for (int count = firstBoarder; firstBoarder <= secondBoarder; firstBoarder++) {
+        for (int count = firstBoarder; firstBoarder <= secondBoarder; count++) {
             summa += count;
         }
         System.out.println(summa);

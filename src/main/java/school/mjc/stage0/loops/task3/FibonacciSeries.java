@@ -9,7 +9,8 @@ public class FibonacciSeries {
             System.out.println(first);
             int numberOfFibonaci = first + second;
             first = second;
-            second = first + numberOfFibonaci;
+            second = numberOfFibonaci;
+
         }
     }
 }

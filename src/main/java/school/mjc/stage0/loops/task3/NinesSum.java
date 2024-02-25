@@ -5,7 +5,7 @@ public class NinesSum {
 
         int summa = 0;
         int number = 0;
-        for (int count = 0; count <= lengthOfLastNumber; count++){
+        for (int count = 0; count < lengthOfLastNumber; count++){
             number = number * 10 + 9;
             summa += number;
         }

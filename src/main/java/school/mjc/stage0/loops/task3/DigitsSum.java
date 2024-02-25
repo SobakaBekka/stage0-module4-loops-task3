@@ -5,7 +5,7 @@ public class DigitsSum {
 
        String numberAstring = t + "";
        int summa = 0;
-       for(int count = 0; count < numberAstring.length(); count++){
+       for(int count = 0; count < numberAstring.length() - 1; count++){
            summa += Character.getNumericValue(numberAstring.charAt(count));
        }
         System.out.println(summa);
