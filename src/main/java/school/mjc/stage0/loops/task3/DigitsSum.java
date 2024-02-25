@@ -1,15 +1,15 @@
 package school.mjc.stage0.loops.task3;
 
 public class DigitsSum {
-    public void printDigitsSum(int t) {
+    public void printDigitsSum(int number) {
+        String numberAsString = number + ""; // Преобразование числа в строку
+        int sum = 0;
 
-        String numberAsString = Math.abs(t) + "";
-        int summa = 0;
-
-        for (int count = 0; count < numberAsString.length(); count++) {
-            summa += Character.getNumericValue(numberAsString.charAt(count));
+        for (int i = 0; i < numberAsString.length(); i++) {
+            // Получение числового значения каждого символа
+            sum += Character.getNumericValue(numberAsString.charAt(i));
         }
 
-        System.out.println(summa);
+        System.out.println("Sum of digits: " + sum);
     }
 }

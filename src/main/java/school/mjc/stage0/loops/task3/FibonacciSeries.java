@@ -2,15 +2,13 @@ package school.mjc.stage0.loops.task3;
 
 public class FibonacciSeries {
     public void printFibonacci(int lastFibonacci) {
+        int first = 0, second = 1;
 
-        int first = 0;
-        int second = 1;
-        for (int count = 1; count <= lastFibonacci; count++) {
-            System.out.println(first);
-            int numberOfFibonaci = first + second;
+        for (int i = 1; i <= lastFibonacci; ++i) {
+            System.out.println(first); // Вывод текущего числа Фибоначчи
+            int next = first + second; // Вычисление следующего числа
             first = second;
-            second = numberOfFibonaci;
-
+            second = next;
         }
     }
 }

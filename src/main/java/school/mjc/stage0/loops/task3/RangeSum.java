@@ -1,15 +1,23 @@
 package school.mjc.stage0.loops.task3;
 
 public class RangeSum {
-    public void printSumInclusive(int firstBoarder, int secondBoarder) {
+    public void printSumInclusive(int firstBorder, int secondBorder) {
+        // Инициализируем сумму как 0
+        int sum = 0;
 
-        int summa = 0;
-        for (int count = firstBoarder; firstBoarder <= secondBoarder; count++) {
-            summa += count;
+        // Если вторая граница меньше первой, меняем их местами
+        if (secondBorder < firstBorder) {
+            int temp = firstBorder;
+            firstBorder = secondBorder;
+            secondBorder = temp;
         }
-        System.out.println(summa);
 
+        // Вычисляем сумму чисел между двумя границами (включительно)
+        for (int i = firstBorder; i <= secondBorder; i++) {
+            sum += i;
+        }
+
+        // Выводим сумму
+        System.out.println(sum);
     }
 }
-//Диапазон сумм.
-//Напишите программу, которая выводит сумму между числами, заданными в качестве аргументов метода:
